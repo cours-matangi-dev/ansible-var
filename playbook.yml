@@ -1,0 +1,14 @@
+- name: Mon Playbook
+  hosts: all
+  vars: 
+    mot: "hello"
+    personnes:
+      - { nom: "pierre", age: "36"}
+      - { nom: "paul", age: "40"}
+      - { nom: "jacques", age: "42"}
+  tasks:
+    - name: premier template
+      template:
+        src: monexemple.yml.j2 
+        dest: /tmp/monexemple.yml
+

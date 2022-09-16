@@ -1,5 +1,5 @@
 - name: Mon Playbook
-  hosts: all
+  hosts: wp
   vars: 
     mot: "hello"
     personnes:
@@ -11,4 +11,9 @@
       template:
         src: monexemple.yml.j2 
         dest: /tmp/monexemple.yml
+      register: __output
+    - name: debug
+      debug:
+        var: __output
+      
 

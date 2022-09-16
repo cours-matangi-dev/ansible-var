@@ -1,11 +1,11 @@
 all:
   children:
-    webserver: 
+    wpserver: 
       hosts:
-        node1: 
-          ansible_host: 3.94.152.228
+        wp: 
+          ansible_host: 54.164.113.178
     dbserver:
       hosts:
-        node2:
-          ansible_host: 54.167.228.101
+        nfs_client:
+          ansible_host: 54.204.74.90
 

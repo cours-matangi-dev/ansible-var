@@ -14,5 +14,5 @@
       register: __output
     - name: debug
       debug:
-        msg: "{{ lookup('template', '/tmp/monexemple.yml') }}"
+        msg: "{{ lookup('file', '/tmp/monexemple.yml') }}"
 

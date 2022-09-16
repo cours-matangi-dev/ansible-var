@@ -14,6 +14,5 @@
       register: __output
     - name: debug
       debug:
-        var: __output
-      
+        msg: "{{ lookup('template', '/tmp/monexemple.yml') }}"
 
